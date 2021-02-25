@@ -1,0 +1,74 @@
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+#clear-items {
+  margin: 16px 0 0 0;
+}
+
+.icons {
+  cursor: pointer;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+}
+
+#input-button {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  height: 32px;
+  width: 80px;
+  border-radius: 0 20px 20px 0;
+  margin: 16px 0 16px 0;
+  box-shadow: none;
+  outline: none;
+}
+
+.input-field {
+  border: 0 none;
+  color: #777;
+  height: 32px;
+  width: 256px;
+  padding: 6px 15px 6px 15px;
+  border-radius: 20px 0 0 20px;
+}
+
+.item-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 8px 0 8px 0;
+  padding: 0 8px 0 8px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.to-do-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #f2f2f2;
+  padding: 16px 32px 32px 32px;
+  border-radius: 20px;
+  width: 512px;
+  height: 512px;
+}
+
+p {
+  margin: 1em 0 1em 0;
+}
