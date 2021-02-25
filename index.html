@@ -2,20 +2,53 @@
 <html>
     <title>To Do List App</title>
     <head>
-        <link rel='stylesheet' href="style.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <link rel='stylesheet' href="style.css"/>
     </head>
-    <body>
+    <body class='body'>
         <div class ='to-do-box'>
             <h1>To Do List</h1>
             <div class='input'>
-                <input value='' type='text' placeholder='Item'/>
-                <button>Add Item</button>
+                <input class='input-field' value='' type='text' placeholder='Item'/>
+                <button id='input-button' class='btn btn-primary'>Add Item</button>
             </div>
             <div class='item-list'>
-
+                <div class='item-box'>
+                    <p>Item</p>
+                    <div class='icons'>
+                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
+                        <i class='material-icons' style='color: #428bca'>create</i>
+                        <i class='material-icons' style='color: red'>delete</i>
+                    </div>
+                </div>
+                <div class='item-box'>
+                    <p>Item</p>
+                    <div class='icons'>
+                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
+                        <i class='material-icons' style='color: #428bca'>create</i>
+                        <i class='material-icons' style='color: red'>delete</i>
+                    </div>
+                </div>
+                <div class='item-box'>
+                    <p>Item</p>
+                    <div class='icons'>
+                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
+                        <i class='material-icons' style='color: #428bca'>create</i>
+                        <i class='material-icons' style='color: red'>delete</i>
+                    </div>
+                </div>
+                <div class='item-box'>
+                    <p>Item</p>
+                    <div class='icons'>
+                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
+                        <i class='material-icons' style='color: #428bca'>create</i>
+                        <i class='material-icons' style='color: red'>delete</i>
+                    </div>
+                </div>
+                
             </div>
-            
+            <button id='clear-items' class='btn btn-primary'>Clear Items</button>
         </div>
         <script src='script.js'></script>
     </body>
