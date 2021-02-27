@@ -57,9 +57,10 @@ deleteIcon.innerHTML = 'delete'
     iconsDiv.appendChild(deleteIcon);
     console.log('hello world');
 
-    if (document.getElementsByClassName('error-message-div').length > 0) {
-        errorMessageDiv.parentNode.removeChild(errorMessageDiv)
-        }
+   // if (document.getElementsByClassName('error-message-div').length > 0) {
+        toDoBoxParent.removeChild(document.getElementsByClassName('error-message-div')[0]);
+        
+   // }
     
 
     }
