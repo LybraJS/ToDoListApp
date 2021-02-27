@@ -57,11 +57,17 @@ deleteIcon.innerHTML = 'delete'
     iconsDiv.appendChild(deleteIcon);
     console.log('hello world');
 
-   // if (document.getElementsByClassName('error-message-div').length > 0) {
+    if (document.getElementsByClassName('error-message-div')[0]) {
         toDoBoxParent.removeChild(document.getElementsByClassName('error-message-div')[0]);
-        
-   // }
-    
+    }
+    }
+}
 
+function clearItems() {
+
+    const itemsList = document.getElementsByClassName('item-list')[0];
+
+    while (itemsList.firstChild) {
+        itemsList.removeChild(itemsList.firstChild)
     }
 }
