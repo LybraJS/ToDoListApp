@@ -36,7 +36,10 @@ iconsDiv.className = 'icons'
 const checkIcon = document.createElement('i');
 checkIcon.className = 'material-icons';
 checkIcon.style.color = 'lime';
-checkIcon.innerHTML = 'check_circle_outline'
+checkIcon.innerHTML = 'check_circle_outline';
+checkIcon.id = 'task-finished'
+checkIcon.addEventListener('click',taskFinished);
+
 
 const editIcon = document.createElement('i');
 editIcon.className = 'material-icons';
@@ -46,7 +49,9 @@ editIcon.innerHTML = 'create'
 const deleteIcon = document.createElement('i');
 deleteIcon.className = 'material-icons';
 deleteIcon.style.color = 'red';
-deleteIcon.innerHTML = 'delete'
+deleteIcon.innerHTML = 'delete';
+deleteIcon.id = 'delete-task';
+deleteIcon.addEventListener('click', deleteTask);
 
     const itemList = document.getElementsByClassName('item-list')[0];
     itemList.appendChild(createItemBox);
@@ -70,4 +75,22 @@ function clearItems() {
     while (itemsList.firstChild) {
         itemsList.removeChild(itemsList.firstChild)
     }
+}
+
+
+
+function taskFinished() {
+
+    const checkIcon = document.getElementById('task-finished');
+
+    this.parentNode.parentNode.style.backgroundColor = 'lime';
+    
+    //console.log('task finished');
+    
+}
+
+function deleteTask() {
+    const deleteIcon = document.getElementById('delete-task');
+
+    this.parentNode.parentNode.parentNode.removeChild(this.parentNode.parentNode);
 }
