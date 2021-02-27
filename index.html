@@ -14,41 +14,16 @@
                 <button id='input-button' class='btn btn-primary' onclick='addItem()'>Add Item</button>
             </div>
             <div class='item-list'>
-               <!-- <div class='item-box'>
-                    <p>Item</p>
+                <div class='item-box'> 
+                    <p contenteditable ='true' id='item-name' >Finish the To Do List App</p>
                     <div class='icons'>
-                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
-                        <i class='material-icons' style='color: #428bca'>create</i>
-                        <i class='material-icons' style='color: red'>delete</i>
+                        <i class='material-icons' id="task-finished-hard" onclick="taskFinished(this)" style='color: lime'>check_circle_outline</i>
+                        <i class='material-icons' id='task-edit-hard' onclick='editItem(this)' style='color: #428bca'>create</i>
+                        <i class='material-icons' id='delete-task-hard' onclick='deleteTask(this)' style='color: red'>delete</i>
                     </div>
                 </div>
-                <div class='item-box'>
-                    <p>Item</p>
-                    <div class='icons'>
-                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
-                        <i class='material-icons' style='color: #428bca'>create</i>
-                        <i class='material-icons' style='color: red'>delete</i>
-                    </div>
-                </div>
-                <div class='item-box'>
-                    <p>Item</p>
-                    <div class='icons'>
-                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
-                        <i class='material-icons' style='color: #428bca'>create</i>
-                        <i class='material-icons' style='color: red'>delete</i>
-                    </div>
-                </div>
-                <div class='item-box'>
-                    <p>Item</p>
-                    <div class='icons'>
-                        <i class='material-icons' style='color: lime'>check_circle_outline</i>
-                        <i class='material-icons' style='color: #428bca'>create</i>
-                        <i class='material-icons' style='color: red'>delete</i>
-                    </div>
-                </div> -->
-                
             </div>
-            <button id='clear-items' class='btn btn-primary' onclick="clearItems()">Clear Items</button>
+            <button id='clear-items' class='btn btn-primary' onclick="clearItems(this)">Clear Items</button>
         </div>
         <script src='script.js'></script>
     </body>
